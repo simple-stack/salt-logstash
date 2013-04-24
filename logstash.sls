@@ -27,13 +27,13 @@ openjdk-7-jre-headless:
 /etc/logstash/logstash.conf:
   file:
     - managed
-    - source: salt://files/logstash.conf
+    - source: salt://salt-logstash/files/logstash.conf
     - template: jinja
 
 /etc/init/logstash.conf:
   file:
     - managed
-    - source: salt://files/logstash.init
+    - source: salt://salt-logstash/files/logstash.init
 
 logstash:
   file.managed:

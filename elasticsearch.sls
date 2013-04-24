@@ -28,7 +28,7 @@ elasticsearch:
   file:
     - unless: grep "ElasticSearch Configuration Example" /etc/elasticsearch/elasticsearch.yml
     - managed
-    - source: salt://files/elasticsearch.yml
+    - source: salt://salt-logstash/files/elasticsearch.yml
     - template: jinja
     - require:
       - pkg: elasticsearch

@@ -9,7 +9,7 @@ rsyslog:
 /etc/rsyslog.d/logstash.conf:
   file:
     - managed
-    - source: salt://files/rsyslog-logstash.conf
+    - source: salt://salt-logstash/files/rsyslog-logstash.conf
     - require:
       - pkg: rsyslog
 

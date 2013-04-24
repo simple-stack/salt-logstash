@@ -31,7 +31,7 @@ https://github.com/rashidkpc/Kibana.git:
 /etc/apache2/sites-available/logstash:
   file:
     - managed
-    - source: salt://files/logstash-apache2.conf
+    - source: salt://salt-logstash/files/logstash-apache2.conf
     - template: jinja
 
 /usr/sbin/a2dissite 000-default:
